@@ -126,7 +126,7 @@
   .nav-links a:hover { color: var(--cyan); }
 
   
-  /* CSSS P2  */
+  /* CSS P2  */
   .nav-hamburger {                    
   display: none;
   background: transparent;
@@ -136,14 +136,18 @@
   cursor: pointer;
 }
 
+  
+  /* left to right P4 */
 @media (max-width: 700px) {
   .nav-hamburger { display: block; }
   .nav-links {
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: auto; 
+    min-width: 180px;
     background: var(--black);
     padding: 1rem 1.5rem;
     border-top: 1px solid var(--cyan-border);
@@ -878,12 +882,17 @@
     <p>Banking &middot; FinTech &middot; Technology</p>
   </div>
 </footer>
-  <!-- JavaScript P3 -->
+  <!-- JavaScript (P3 repl P5) -->
   
 <script>
   function toggleMenu() {
     document.querySelector('.nav-links').classList.toggle('open');
   }
+  document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.remove('open');
+    });
+  });
 </script>
   
 </body>
