@@ -896,6 +896,15 @@
       document.querySelector('.nav-links').classList.remove('open');
     });
   });
+  document.addEventListener('click', function(e) {
+    var navLinks = document.querySelector('.nav-links');
+    var hamburger = document.getElementById('hamburger');
+    if (navLinks.classList.contains('open') && 
+        !navLinks.contains(e.target) && 
+        e.target !== hamburger) {
+        navLinks.classList.remove('open');
+    }
+});
 </script>
   
 </body>
