@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://qatorque.com/sitemap.xml
+Sitemap: https://www.qatorque.com/sitemap.xml
