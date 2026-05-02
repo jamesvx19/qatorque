@@ -383,7 +383,7 @@
   }
   .pricing-units {
     font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #ffffff;
     line-height: 1;
@@ -690,20 +690,19 @@
 <nav>
   <a href="#" class="nav-brand">qa<span>Torque</span></a>
   <div class="nav-links" id="navLinks">
-    <a href="#" onclick="scrollTo('how', event)">How It Works</a>
-    <a href="#" onclick="scrollTo('pricing', event)">Pricing</a>
-    <a href="#" onclick="scrollTo('contact', event)">Contact</a>
+    <a href="#" onclick="scrollToSection('how', event)">How It Works</a>
+    <a href="#" onclick="scrollToSection('pricing', event)">Pricing</a>
+    <a href="#" onclick="scrollToSection('contact', event)">Contact</a>
   </div>
-  <button class="nav-hamburger" id="hamburger" onclick="toggleMenu(event)">&#9776;</button>
+  <button class="nav-hamburger" id="hamburger">&#9776;</button>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <p class="hero-eyebrow">Playwright · Web Applications · Fixed Price</p>
-    <h1>Test Automation,<br><em>Built Right. Priced Simply.</em></h1>
-    <p class="hero-sub">Production-grade test suites for your critical user journeys — scoped clearly, delivered by Senior SDETs, and owned by you completely.</p>
-    <p class="hero-sub-2">Flake-free regression tests across Chrome, Firefox, and Safari. Clean code. No hidden fees. No monthly bills. If you like what you get, you know where to find us.</p>
+    <h1>Playwright Test Automation,<br><em>Built Right. Priced Simply.</em></h1>
+    <p class="hero-sub">Production-grade test suites for your web application journeys — scoped clearly, delivered by Senior SDETs, and owned by you completely.</p>
+    <p class="hero-sub-2">Fixed scope. Clear pricing. Code delivered to your repository.<br>We run tests on the environment you provide.</p>
     <a href="#" class="hero-cta" onclick="openQuoteForm(event)">Request a Quote →</a>
     <div class="hero-trust">
       <div class="trust-item">
@@ -731,7 +730,7 @@
   <div class="section-inner">
     <p class="section-label">The process</p>
     <h2 class="section-title">How it works</h2>
-    <p class="section-intro">Four steps from enquiry to a live, CI/CD-integrated test suite — with no surprises at any stage.</p>
+    <p class="section-intro">Four steps from enquiry to a delivered test suite — with no surprises at any stage.</p>
 
     <div class="steps-grid">
       <div class="step">
@@ -747,7 +746,7 @@
       <div class="step">
         <div class="step-num">03 — SPRINT DELIVERY</div>
         <h3>Senior SDETs build your suite</h3>
-        <p>Clean Playwright code, Page Object Model architecture, resilient selectors, and full CI/CD integration — delivered in a defined sprint.</p>
+        <p>Clean Playwright code, Page Object Model architecture, resilient selectors — delivered in a defined sprint to your agreed timeline.</p>
       </div>
       <div class="step">
         <div class="step-num">04 — YOU OWN IT</div>
@@ -770,7 +769,7 @@
         <div class="what-icon">
           <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
         </div>
-        <h3>Native Playwright Code</h3>
+        <h3>Playwright Code</h3>
         <p>TypeScript or Python — your choice. Clean, readable, version-controlled code that any SDET can pick up and extend.</p>
       </div>
       <div class="what-card">
@@ -789,13 +788,6 @@
       </div>
       <div class="what-card">
         <div class="what-icon">
-          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-        </div>
-        <h3>CI/CD Integration</h3>
-        <p>We don't just deliver code — we ensure it runs in your pipeline. GitHub Actions, GitLab CI, Jenkins, or Azure DevOps.</p>
-      </div>
-      <div class="what-card">
-        <div class="what-icon">
           <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
         </div>
         <h3>Trace Files &amp; Reporting</h3>
@@ -805,8 +797,8 @@
         <div class="what-icon">
           <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <h3>Resilient Selectors</h3>
-        <p>Built to survive UI changes. We avoid brittle CSS selectors in favour of accessible, stable locator strategies.</p>
+        <h3>Resilient Test Design</h3>
+        <p>Tests are built using stable locator strategies and structured abstractions to reduce flakiness and maintenance overhead.</p>
       </div>
     </div>
   </div>
@@ -816,26 +808,26 @@
 <section id="pricing">
   <div class="section-inner">
     <p class="section-label">Engagement tiers</p>
-    <h2 class="section-title">Simple, transparent tiers</h2>
-    <p class="section-intro">Choose the scope that fits your needs. Pricing shared on request — no surprises, no hidden fees.</p>
+    <h2 class="section-title">Select the tier that matches your testing scope.</h2>
+    <p class="section-intro">Pricing shared on request — no surprises, no hidden fees.</p>
 
     <div class="pricing-grid">
       <div class="pricing-card">
-        <div class="pricing-tier">Starter</div>
-        <div class="pricing-units">10
+        <div class="pricing-tier">Pilot</div>
+        <div class="pricing-units">Up to 10
           <span>Test Units</span>
         </div>
-        <p class="pricing-desc">Ideal for validating your most critical flows or a first engagement to see how we work.</p>
+        <p class="pricing-desc">A low-commitment first engagement to validate our approach against your most critical flows.</p>
       </div>
       <div class="pricing-card featured">
-        <div class="pricing-tier">Growth</div>
+        <div class="pricing-tier">Starter</div>
         <div class="pricing-units">30
           <span>Test Units</span>
         </div>
         <p class="pricing-desc">For teams ready to build meaningful regression coverage across their core product journeys.</p>
       </div>
       <div class="pricing-card">
-        <div class="pricing-tier">Professional</div>
+        <div class="pricing-tier">Growth</div>
         <div class="pricing-units">100
           <span>Test Units</span>
         </div>
@@ -850,7 +842,7 @@
       </div>
     </div>
 
-    <p class="pricing-note">All tiers include Scope Review, POM architecture, cross-browser coverage, CI/CD integration, and full trace reporting.</p>
+    <p class="pricing-note">All tiers include Scope Review, POM architecture, cross-browser coverage, and full trace reporting.</p>
 
     <div class="pricing-cta-wrap">
       <a href="#" class="btn-primary" onclick="openQuoteForm(event)">Request a Quote →</a>
@@ -869,6 +861,7 @@
     <p class="section-label">Get in touch</p>
     <h2 class="section-title">Ready to talk?</h2>
     <p class="section-intro">Tell us what you're working on. We'll review your requirements and be in touch within one business day to arrange a Scope Review.</p>
+    <p style="font-size:0.8rem; color:rgba(255,255,255,0.3); font-weight:300; margin-top:-1.5rem; margin-bottom:2rem;">Please use your company email address when getting in touch.</p>
 
     <div class="contact-actions">
       <button class="btn-primary" onclick="toggleQuoteForm()">Request a Quote</button>
@@ -886,6 +879,10 @@
         <input type="text" placeholder="Company name">
       </div>
       <div class="form-row">
+        <label>Company Email</label>
+        <input type="email" placeholder="you@yourcompany.com">
+      </div>
+      <div class="form-row">
         <label>Website</label>
         <input type="url" placeholder="https://yourcompany.com">
       </div>
@@ -893,9 +890,9 @@
         <label>Which tier interests you?</label>
         <select>
           <option value="">Select a tier</option>
-          <option>Starter — 10 Test Units</option>
-          <option>Growth — 30 Test Units</option>
-          <option>Professional — 100 Test Units</option>
+          <option>Pilot — Up to 10 Test Units</option>
+          <option>Starter — 30 Test Units</option>
+          <option>Growth — 100 Test Units</option>
           <option>Enterprise — 250+ Test Units</option>
           <option>Not sure yet</option>
         </select>
@@ -942,29 +939,34 @@
 
 <script>
   // NAV
-  function toggleMenu(e) {
+  var hamburger = document.getElementById('hamburger');
+  var navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', function(e) {
     e.stopPropagation();
-    document.getElementById('navLinks').classList.toggle('open');
-  }
-  document.querySelectorAll('.nav-links a').forEach(function(link) {
-    link.addEventListener('click', function() {
-      document.getElementById('navLinks').classList.remove('open');
-    });
+    navLinks.classList.toggle('open');
   });
+
   document.addEventListener('click', function(e) {
-    var navLinks = document.getElementById('navLinks');
-    var hamburger = document.getElementById('hamburger');
     if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && e.target !== hamburger) {
       navLinks.classList.remove('open');
     }
   });
 
   // SCROLL
-  function scrollTo(id, e) {
+  function scrollToSection(id, e) {
     if (e) e.preventDefault();
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    document.getElementById('navLinks').classList.remove('open');
+    var el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    navLinks.classList.remove('open');
   }
+
+  // attach scroll to nav links
+  document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      navLinks.classList.remove('open');
+    });
+  });
 
   // QUOTE FORM
   function openQuoteForm(e) {
