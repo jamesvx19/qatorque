@@ -191,21 +191,6 @@
     font-weight: 300;
     line-height: 1.75;
   }
-  .hero-cta {
-    display: inline-block;
-    background: var(--cyan);
-    color: var(--black);
-    text-decoration: none;
-    padding: 0.85rem 2.2rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    transition: background 0.2s, transform 0.15s;
-    cursor: pointer;
-    border: none;
-  }
-  .hero-cta:hover { background: #33ecff; transform: translateY(-1px); }
-
   .hero-trust {
     display: flex; gap: 3rem; flex-wrap: wrap;
     margin-top: 3.5rem;
@@ -420,11 +405,6 @@
     text-align: left;
     margin-top: 1.5rem;
   }
-  .pricing-cta-wrap {
-    text-align: center;
-    margin-top: 2.5rem;
-  }
-
   /* QA ADVISORY INLINE */
   .advisory-inline {
     margin-top: 3rem;
@@ -537,62 +517,6 @@
   }
   .contact-linkedin a:hover { color: rgba(255,255,255,0.75); }
 
-  /* QUOTE FORM */
-  #quoteForm {
-    display: none;
-    margin-top: 2rem;
-    border: 1px solid var(--cyan-border);
-    padding: 2rem;
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    background: rgba(0,229,255,0.02);
-    text-align: left;
-  }
-  .form-row {
-    margin-bottom: 1.1rem;
-  }
-  .form-row label {
-    display: block;
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.6);
-    margin-bottom: 0.4rem;
-  }
-  .form-row input,
-  .form-row select,
-  .form-row textarea {
-    width: 100%;
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.1);
-    color: rgba(255,255,255,0.8);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.88rem;
-    padding: 0.65rem 0.9rem;
-    outline: none;
-    transition: border-color 0.2s;
-    appearance: none;
-  }
-  .form-row input:focus,
-  .form-row select:focus,
-  .form-row textarea:focus {
-    border-color: var(--cyan);
-  }
-  .form-row select option { background: #111; color: #fff; }
-  .form-row textarea { resize: vertical; min-height: 90px; }
-  .form-submit {
-    width: 100%;
-    margin-top: 0.5rem;
-  }
-  .form-note {
-    font-size: 0.75rem;
-    color: rgba(255,255,255,0.45);
-    margin-top: 1rem;
-    text-align: center;
-    font-weight: 300;
-  }
 
   /* EMAIL PICKER */
   #emailPicker {
@@ -600,33 +524,26 @@
     margin-top: 1.5rem;
     border: 1px solid var(--cyan-border);
     padding: 1.5rem;
-    max-width: 360px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     background: rgba(0,229,255,0.02);
   }
-  .email-label {
-    font-size: 0.88rem;
-    color: rgba(255,255,255,0.7);
-    margin-bottom: 1.2rem;
-    text-align: left;
-  }
-  .email-label span { color: var(--cyan); font-weight: 500; }
   .email-options { display: flex; flex-direction: column; gap: 0.65rem; }
   .email-option {
     display: block;
     width: 100%;
-    padding: 0.65rem 1rem;
+    padding: 0.75rem 1rem;
     background: transparent;
     border: 1px solid var(--cyan-border);
-    color: rgba(255,255,255,0.65);
+    color: rgba(255,255,255,0.75);
     font-family: 'DM Sans', sans-serif;
-    font-size: 0.85rem;
-    text-align: left;
+    font-size: 0.88rem;
+    text-align: center;
     text-decoration: none;
     cursor: pointer;
     transition: border-color 0.2s, color 0.2s, background 0.2s;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.05em;
   }
   .email-option:hover {
     border-color: var(--cyan);
@@ -660,8 +577,7 @@
   .hero h1 { animation-delay: 0.2s; }
   .hero-sub { animation-delay: 0.3s; }
   .hero-sub-2 { animation-delay: 0.35s; }
-  .hero-cta { animation-delay: 0.4s; }
-  .hero-trust { animation-delay: 0.5s; }
+  .hero-trust { animation-delay: 0.4s; }
 
   /* MOBILE */
   @media (max-width: 700px) {
@@ -704,7 +620,6 @@
     <h1>Playwright Test Automation,<br><em>Built Right. Priced Simply.</em></h1>
     <p class="hero-sub">Production-grade Playwright automation for your core regression workflows — scoped clearly, delivered by Senior SDETs, and fully owned by your team.</p>
     <p class="hero-sub-2">Fixed scope. Clear pricing. Code delivered to your repository.<br>We run tests on the environment you provide.</p>
-    <a href="#" class="hero-cta" onclick="openQuoteForm(event)">Request a Quote →</a>
     <div class="hero-trust">
       <div class="trust-item">
         <div class="trust-dot"></div>
@@ -831,13 +746,9 @@
 
     <p class="pricing-note">Every engagement includes a Scope Review, POM architecture, cross-browser coverage, and Test Reports.</p>
 
-    <div class="pricing-cta-wrap">
-      <a href="#" class="btn-primary" onclick="openQuoteForm(event)">Request a Quote →</a>
-    </div>
-
     <div class="advisory-inline">
       <span class="advisory-inline-label">QA Advisory</span>
-      <p class="advisory-inline-text">Need senior QA leadership, a process audit, or governance support? We offer advisory engagements for Banking and FinTech teams on a selective basis. <a href="#" class="advisory-inline-link" onclick="openQuoteForm(event)">Get in touch →</a></p>
+      <p class="advisory-inline-text">Need senior QA leadership, a process audit, or governance support? We offer advisory engagements for Banking and FinTech teams on a selective basis. <a href="#" class="advisory-inline-link" onclick="scrollToSection('contact', event); setTimeout(toggleEmailPicker, 500);">Get in touch →</a></p>
     </div>
   </div>
 </section>
@@ -851,52 +762,14 @@
     <p style="font-size:0.8rem; color:rgba(255,255,255,0.55); font-weight:300; margin-top:-1.5rem; margin-bottom:2rem;">Please use your company email address when getting in touch.</p>
 
     <div class="contact-actions">
-      <button class="btn-primary" onclick="toggleQuoteForm()">Request a Quote</button>
-      <button class="btn-secondary" onclick="toggleEmailPicker()" id="emailBtn">Send an Email</button>
-    </div>
-
-    <!-- Quote Form -->
-    <div id="quoteForm">
-      <div class="form-row">
-        <label>Name</label>
-        <input type="text" placeholder="Your name">
-      </div>
-      <div class="form-row">
-        <label>Company</label>
-        <input type="text" placeholder="Company name">
-      </div>
-      <div class="form-row">
-        <label>Company Email</label>
-        <input type="email" placeholder="you@yourcompany.com">
-      </div>
-      <div class="form-row">
-        <label>Website</label>
-        <input type="url" placeholder="https://yourcompany.com">
-      </div>
-      <div class="form-row">
-        <label>Which engagement interests you?</label>
-        <select>
-          <option value="">Select an engagement</option>
-          <option>Pilot — Up to 10 Workflows</option>
-          <option>Regular — From 10 Workflows</option>
-          <option>Not sure yet</option>
-        </select>
-      </div>
-      <div class="form-row">
-        <label>What do you need automated?</label>
-        <textarea placeholder="Briefly describe the Workflows you need automated and the problem you're trying to solve..."></textarea>
-      </div>
-      <button class="btn-primary form-submit" onclick="submitQuote()">Send Request →</button>
-      <p class="form-note">We respond within one business day.</p>
+      <button class="btn-primary" onclick="toggleEmailPicker()">Request a Quote →</button>
     </div>
 
     <!-- Email Picker -->
     <div id="emailPicker">
-      <p class="email-label">Email <span>jameson&#64;qatorque&#46;com</span></p>
       <div class="email-options">
-        <a href="https://mail.google.com/mail/?view=cm&to=jameson%40qatorque.com&su=QA%20Automation%20Enquiry" target="_blank" class="email-option" onclick="closePickerDelayed()">Open in Gmail</a>
-        <a href="https://outlook.office.com/mail/deeplink/compose?to=jameson%40qatorque.com&subject=QA%20Automation%20Enquiry" target="_blank" class="email-option" onclick="closePickerDelayed()">Open in Outlook</a>
-        <button class="email-option" onclick="copyEmail()" id="copyBtn">Copy email address</button>
+        <a href="https://mail.google.com/mail/?view=cm&to=jameson%40qatorque.com&su=QA%20Automation%20Quote%20Request" target="_blank" class="email-option" onclick="closePickerDelayed()">Open in Gmail</a>
+        <a href="https://outlook.office.com/mail/deeplink/compose?to=jameson%40qatorque.com&subject=QA%20Automation%20Quote%20Request" target="_blank" class="email-option" onclick="closePickerDelayed()">Open in Outlook</a>
       </div>
     </div>
 
@@ -953,28 +826,10 @@
     });
   });
 
-  // QUOTE FORM
-  function openQuoteForm(e) {
-    if (e) e.preventDefault();
-    document.getElementById('quoteForm').style.display = 'block';
-    document.getElementById('emailPicker').style.display = 'none';
-    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-  }
-  function toggleQuoteForm() {
-    var form = document.getElementById('quoteForm');
-    form.style.display = form.style.display === 'block' ? 'none' : 'block';
-    document.getElementById('emailPicker').style.display = 'none';
-  }
-  function submitQuote() {
-    var form = document.getElementById('quoteForm');
-    form.innerHTML = '<p style="color:var(--cyan); font-size:0.95rem; text-align:center; padding:1rem 0;">Thank you. We\'ll be in touch within one business day to arrange a Scope Review.</p>';
-  }
-
   // EMAIL PICKER
   function toggleEmailPicker() {
     var picker = document.getElementById('emailPicker');
-    picker.style.display = picker.style.display === 'none' || picker.style.display === '' ? 'block' : 'none';
-    document.getElementById('quoteForm').style.display = 'none';
+    picker.style.display = picker.style.display === 'block' ? 'none' : 'block';
   }
   function closePickerDelayed() {
     setTimeout(function() {
@@ -983,21 +838,11 @@
   }
   document.addEventListener('click', function(e) {
     var picker = document.getElementById('emailPicker');
-    var emailBtn = document.getElementById('emailBtn');
-    if (picker.style.display === 'block' && !picker.contains(e.target) && e.target !== emailBtn) {
+    var btn = document.querySelector('.contact-actions button');
+    if (picker && picker.style.display === 'block' && !picker.contains(e.target) && e.target !== btn) {
       picker.style.display = 'none';
     }
   });
-  function copyEmail() {
-    navigator.clipboard.writeText('jameson@qatorque.com').then(function() {
-      var btn = document.getElementById('copyBtn');
-      btn.textContent = 'Copied!';
-      setTimeout(function() {
-        btn.textContent = 'Copy email address';
-        document.getElementById('emailPicker').style.display = 'none';
-      }, 1000);
-    });
-  }
 </script>
 
 </body>
