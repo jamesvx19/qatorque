@@ -3,11 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0f172a"> <!-- It improves browser appearance on mobile and some search previews. Otherwise the top of mobile browers will be grey instead of your theme -->
 
 <title>Playwright Test Automation Service | qaTorque</title>
 <meta name="description" content="qaTorque delivers production-grade Playwright test automation in fixed-price sprints. Clean code, your repository, no subscriptions. Built for Banking, FinTech, and Technology teams.">
-<!-- <meta name="keywords" content="Playwright automation, test automation, QA automation, fixed price testing, Playwright TypeScript, regression testing, Banking QA, FinTech QA, SDET, test scripts"> UNUSED tags - by google and bing - 3May2026 -->
 <meta name="author" content="qaTorque">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.qatorque.com/">
@@ -15,8 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.qatorque.com/">
 <meta property="og:title" content="qaTorque | Playwright Automation, Built Right. Priced Simply.">
-<meta property="og:description" content="Production-grade Playwright automation for web application regression workflows. Fixed price. You own the code. No subscriptions.">  
-<!-- <meta property="og:description" content="Production-grade Playwright test suites for your critical user journeys. Fixed price. You own the code. No subscriptions."> -->
+<meta property="og:description" content="Production-grade Playwright automation for web application regression workflows. Fixed price. You own the code. No subscriptions.">
 <meta property="og:image" content="https://www.qatorque.com/og-image.png">
 <meta property="og:site_name" content="qaTorque">
 <meta property="og:locale" content="en_IN">
@@ -174,12 +171,13 @@
     margin-bottom: 1.5rem;
   }
   .hero h1 em {
-    font-style: italic;
+    font-style: normal;
+    font-weight: 400;
     color: var(--cyan);
   }
   .hero-sub {
     font-size: 1.05rem;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.85);
     max-width: 620px;
     margin-bottom: 0.9rem;
     font-weight: 300;
@@ -187,7 +185,7 @@
   }
   .hero-sub-2 {
     font-size: 0.93rem;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.7);
     max-width: 580px;
     margin-bottom: 2.5rem;
     font-weight: 300;
@@ -224,7 +222,7 @@
   }
   .trust-text {
     font-size: 0.78rem;
-    color: rgba(255,255,255,0.35);
+    color: rgba(255,255,255,0.55);
     font-weight: 300;
     letter-spacing: 0.04em;
   }
@@ -250,14 +248,14 @@
   }
   .section-intro {
     font-size: 1rem;
-    color: rgba(255,255,255,0.45);
+    color: rgba(255,255,255,0.7);
     max-width: 600px;
     margin-bottom: 3rem;
     font-weight: 300;
   }
 
   /* HOW IT WORKS */
-  #how { background: #0d0d0d; }
+  #how { background: #0f0f0f; }
   .steps-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -283,7 +281,7 @@
     font-weight: 500;
     letter-spacing: 0.15em;
     color: var(--cyan);
-    background: #0d0d0d;
+    background: #0f0f0f;
     display: inline-block;
     padding-right: 1rem;
     margin-bottom: 1.2rem;
@@ -297,13 +295,13 @@
   }
   .step p {
     font-size: 0.85rem;
-    color: rgba(255,255,255,0.45);
+    color: rgba(255,255,255,0.65);
     font-weight: 300;
     line-height: 1.65;
   }
 
   /* WHAT YOU GET */
-  #what { background: #111111; }
+  #what { background: #161616; }
   .what-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -344,7 +342,7 @@
   }
   .what-card p {
     font-size: 0.83rem;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.65);
     font-weight: 300;
     line-height: 1.65;
   }
@@ -353,15 +351,16 @@
   #pricing { background: var(--black); }
   #pricing .section-label { color: var(--cyan); }
   #pricing .section-title { color: #ffffff; }
-  #pricing .section-intro { color: rgba(255,255,255,0.45); }
+  #pricing .section-intro { color: rgba(255,255,255,0.7); }
 
   .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1px;
     background: rgba(0,229,255,0.1);
     border: 1px solid rgba(0,229,255,0.1);
     margin-bottom: 2rem;
+    max-width: 700px;
   }
   .pricing-card {
     background: #0a0a0a;
@@ -395,14 +394,14 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 0.8rem;
     font-weight: 300;
-    color: rgba(255,255,255,0.35);
+    color: rgba(255,255,255,0.55);
     letter-spacing: 0.1em;
     display: block;
     margin-top: 0.4rem;
   }
   .pricing-desc {
     font-size: 0.82rem;
-    color: rgba(255,255,255,0.35);
+    color: rgba(255,255,255,0.65);
     font-weight: 300;
     line-height: 1.6;
     margin-top: 1.2rem;
@@ -416,9 +415,9 @@
 
   .pricing-note {
     font-size: 0.8rem;
-    color: rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.55);
     font-weight: 300;
-    text-align: center;
+    text-align: left;
     margin-top: 1.5rem;
   }
   .pricing-cta-wrap {
@@ -448,21 +447,21 @@
   }
   .advisory-inline-text {
     font-size: 0.85rem;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.55);
     font-weight: 300;
     line-height: 1.75;
   }
   .advisory-inline-link {
-    color: rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.6);
     text-decoration: none;
-    border-bottom: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.25);
     padding-bottom: 1px;
     transition: color 0.2s, border-color 0.2s;
     margin-left: 0.3rem;
   }
   .advisory-inline-link:hover {
-    color: rgba(255,255,255,0.7);
-    border-color: rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.85);
+    border-color: rgba(255,255,255,0.5);
   }
 
   /* CONTACT */
@@ -480,7 +479,7 @@
   }
   #contact .section-label { color: var(--cyan); }
   #contact .section-title { color: #ffffff; }
-  #contact .section-intro { color: rgba(255,255,255,0.5); margin: 0 auto 2.5rem; }
+  #contact .section-intro { color: rgba(255,255,255,0.7); margin: 0 auto 2.5rem; }
 
   .contact-actions {
     display: flex;
@@ -527,16 +526,16 @@
   .contact-linkedin {
     margin-top: 1.5rem;
     font-size: 0.78rem;
-    color: rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.45);
     font-weight: 300;
   }
   .contact-linkedin a {
-    color: rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.45);
     text-decoration: none;
     letter-spacing: 0.04em;
     transition: color 0.2s;
   }
-  .contact-linkedin a:hover { color: rgba(255,255,255,0.5); }
+  .contact-linkedin a:hover { color: rgba(255,255,255,0.75); }
 
   /* QUOTE FORM */
   #quoteForm {
@@ -559,7 +558,7 @@
     font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.6);
     margin-bottom: 0.4rem;
   }
   .form-row input,
@@ -589,7 +588,7 @@
   }
   .form-note {
     font-size: 0.75rem;
-    color: rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.45);
     margin-top: 1rem;
     text-align: center;
     font-weight: 300;
@@ -649,7 +648,7 @@
     font-weight: 400;
     color: var(--cyan);
   }
-  footer p { font-size: 0.7rem; color: rgba(255,255,255,0.2); }
+  footer p { font-size: 0.7rem; color: rgba(255,255,255,0.45); }
 
   /* ANIMATIONS */
   @keyframes fadeUp {
@@ -676,7 +675,7 @@
     .hero-trust { gap: 1.2rem; }
     .steps-grid { grid-template-columns: 1fr; }
     .steps-grid::before { display: none; }
-    .step { padding: 0 0 2rem 0; border-left: 2px solid rgba(0,229,255,0.2); padding-left: 1.5rem; background: #0d0d0d; }
+    .step { padding: 0 0 2rem 0; border-left: 2px solid rgba(0,229,255,0.2); padding-left: 1.5rem; background: #0f0f0f; }
     .what-grid { grid-template-columns: 1fr; }
     .pricing-grid { grid-template-columns: 1fr; }
     .contact-actions { flex-direction: column; align-items: stretch; }
@@ -703,8 +702,7 @@
 <section class="hero">
   <div class="hero-inner">
     <h1>Playwright Test Automation,<br><em>Built Right. Priced Simply.</em></h1>
-    <p class="hero-sub">Production-grade Playwright automation for your core regression workflows — scoped clearly, delivered by Senior SDETs, and fully owned by your team.</p> 
-    <!-- Production-grade test suites for your web application journeys — scoped clearly, delivered by Senior SDETs, and owned by you completely.-->
+    <p class="hero-sub">Production-grade Playwright automation for your core regression workflows — scoped clearly, delivered by Senior SDETs, and fully owned by your team.</p>
     <p class="hero-sub-2">Fixed scope. Clear pricing. Code delivered to your repository.<br>We run tests on the environment you provide.</p>
     <a href="#" class="hero-cta" onclick="openQuoteForm(event)">Request a Quote →</a>
     <div class="hero-trust">
@@ -739,13 +737,12 @@
       <div class="step">
         <div class="step-num">01 — SCOPE REVIEW</div>
         <h3>We understand your flows</h3>
-        <p>We capture the workflows and expected behaviours provided by your team as a lightweight scoping reference before automation begins.</p> 
-        <!-- A focused session to map your critical user journeys, priorities, and expected outcomes. We document everything before a line of code is written.-->
+        <p>We capture the workflows and expected behaviours provided by your team as a lightweight scoping reference before automation begins.</p>
       </div>
       <div class="step">
         <div class="step-num">02 — FIXED QUOTE</div>
         <h3>You know the cost upfront</h3>
-        <p>We propose a fixed price based on your unit count. No hourly estimates, no scope creep, no surprises. You approve before we begin.</p>
+        <p>We propose a fixed price based on your Workflow count. No hourly estimates, no scope creep, no surprises. You approve before we begin.</p>
       </div>
       <div class="step">
         <div class="step-num">03 — SPRINT DELIVERY</div>
@@ -785,6 +782,13 @@
       </div>
       <div class="what-card">
         <div class="what-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Resilient Test Design</h3>
+        <p>Tests are built using stable locator strategies and structured abstractions to reduce flakiness and maintenance overhead.</p>
+      </div>
+      <div class="what-card">
+        <div class="what-icon">
           <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
         </div>
         <h3>Cross-Browser Coverage</h3>
@@ -794,15 +798,8 @@
         <div class="what-icon">
           <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
         </div>
-        <h3>Trace Files &amp; Reporting</h3>
-        <p>Full Playwright trace files, video recordings, and step-by-step logs included with every delivery.</p>
-      </div>
-      <div class="what-card">
-        <div class="what-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h3>Resilient Test Design</h3>
-        <p>Tests are built using stable locator strategies and structured abstractions to reduce flakiness and maintenance overhead.</p>
+        <h3>Test Reports</h3>
+        <p>Full trace reporting included with every delivery. Complete visibility into every Workflow run.</p>
       </div>
     </div>
   </div>
@@ -812,44 +809,27 @@
 <section id="pricing">
   <div class="section-inner">
     <p class="section-label">Engagement tiers</p>
-    <h2 class="section-title">Select the tier that matches your testing scope.</h2>
+    <h2 class="section-title">Select the engagement that matches your scope.</h2>
     <p class="section-intro">Pricing shared on request — no surprises, no hidden fees.</p>
 
     <div class="pricing-grid">
-      <div class="pricing-card">
+      <div class="pricing-card featured">
         <div class="pricing-tier">Pilot</div>
         <div class="pricing-units">Up to 10
-          <span>Test Units</span>
+          <span>Workflows</span>
         </div>
-        <p class="pricing-desc">A low-commitment first engagement to validate our approach against your most critical flows.</p>
-      </div>
-      <div class="pricing-card featured">
-        <div class="pricing-tier">Starter</div>
-        <div class="pricing-units">30
-          <span>Test Units</span>
-        </div>
-        
-        
-        <p class="pricing-desc">For teams looking to build structured regression automation across their core web application workflows.</p> 
-        <!--  For teams ready to build meaningful regression coverage across their core product journeys.    -->
+        <p class="pricing-desc">A first engagement to validate our approach and delivery quality. Available once per company.</p>
       </div>
       <div class="pricing-card">
-        <div class="pricing-tier">Growth</div>
-        <div class="pricing-units">100
-          <span>Test Units</span>
+        <div class="pricing-tier">Regular</div>
+        <div class="pricing-units">From 10
+          <span>Workflows</span>
         </div>
-        <p class="pricing-desc">A comprehensive suite covering your full regression surface. Built for scale and long-term maintainability.</p>
-      </div>
-      <div class="pricing-card pricing-enterprise">
-        <div class="pricing-tier">Enterprise</div>
-        <div class="pricing-units">250+
-          <span>Test Units</span>
-        </div>
-        <p class="pricing-desc">Custom scope, delivered in sprints. Fixed-price proposal tailored to your programme.</p>
+        <p class="pricing-desc">Structured regression automation at any scale. Scoped per engagement, priced per Workflow.</p>
       </div>
     </div>
 
-    <p class="pricing-note">All tiers include Scope Review, POM architecture, cross-browser coverage, and full trace reporting.</p>
+    <p class="pricing-note">Every engagement includes a Scope Review, POM architecture, cross-browser coverage, and Test Reports.</p>
 
     <div class="pricing-cta-wrap">
       <a href="#" class="btn-primary" onclick="openQuoteForm(event)">Request a Quote →</a>
@@ -868,7 +848,7 @@
     <p class="section-label">Get in touch</p>
     <h2 class="section-title">Ready to talk?</h2>
     <p class="section-intro">Tell us what you're working on. We'll review your requirements and be in touch within one business day to arrange a Scope Review.</p>
-    <p style="font-size:0.8rem; color:rgba(255,255,255,0.3); font-weight:300; margin-top:-1.5rem; margin-bottom:2rem;">Please use your company email address when getting in touch.</p>
+    <p style="font-size:0.8rem; color:rgba(255,255,255,0.55); font-weight:300; margin-top:-1.5rem; margin-bottom:2rem;">Please use your company email address when getting in touch.</p>
 
     <div class="contact-actions">
       <button class="btn-primary" onclick="toggleQuoteForm()">Request a Quote</button>
@@ -894,19 +874,17 @@
         <input type="url" placeholder="https://yourcompany.com">
       </div>
       <div class="form-row">
-        <label>Which tier interests you?</label>
+        <label>Which engagement interests you?</label>
         <select>
-          <option value="">Select a tier</option>
-          <option>Pilot — Up to 10 Test Units</option>
-          <option>Starter — 30 Test Units</option>
-          <option>Growth — 100 Test Units</option>
-          <option>Enterprise — 250+ Test Units</option>
+          <option value="">Select an engagement</option>
+          <option>Pilot — Up to 10 Workflows</option>
+          <option>Regular — From 10 Workflows</option>
           <option>Not sure yet</option>
         </select>
       </div>
       <div class="form-row">
         <label>What do you need automated?</label>
-        <textarea placeholder="Briefly describe your critical user flows or the problem you're trying to solve..."></textarea>
+        <textarea placeholder="Briefly describe the Workflows you need automated and the problem you're trying to solve..."></textarea>
       </div>
       <button class="btn-primary form-submit" onclick="submitQuote()">Send Request →</button>
       <p class="form-note">We respond within one business day.</p>
