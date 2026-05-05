@@ -79,11 +79,17 @@
 
   /* NAV */
   nav {
-    position: sticky; top: 0; z-index: 100;
+    position: fixed; top: 0; left: 0; right: 0; width: 100%;
+    z-index: 1000;
     background: var(--black);
     display: flex; justify-content: space-between; align-items: center;
     padding: 0.9rem 3rem;
     border-bottom: 1px solid var(--cyan-border);
+    -webkit-transform: translateZ(0); /* force GPU compositing layer - fixes sticky bugs on Android/iOS */
+    transform: translateZ(0);
+  }
+  body {
+    padding-top: 60px; /* offset so content isn't hidden under fixed nav */
   }
   .nav-brand {
     font-family: 'Exo 2', sans-serif;
@@ -115,16 +121,6 @@
   }
 
   @media (max-width: 700px) {
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-    }
-    body {
-      padding-top: 56px; /* offset equal to nav height so content isn't hidden behind fixed nav */
-    }
     .nav-hamburger { display: block; }
     .nav-links {
       display: none;
@@ -573,6 +569,7 @@
   /* MOBILE */
   @media (max-width: 700px) {
     nav { padding: 0.6rem 1.5rem; }
+    body { padding-top: 50px; } /* smaller nav on mobile = smaller offset */
     .hero { padding: 4rem 1.5rem; min-height: 80vh; }
     section { padding: 4rem 1.5rem; }
     #advisory { padding: 3rem 1.5rem; }
