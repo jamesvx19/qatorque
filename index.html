@@ -115,6 +115,16 @@
   }
 
   @media (max-width: 700px) {
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
+    body {
+      padding-top: 56px; /* offset equal to nav height so content isn't hidden behind fixed nav */
+    }
     .nav-hamburger { display: block; }
     .nav-links {
       display: none;
