@@ -68,28 +68,33 @@
     --card-bg-light: #ffffff;
   }
 
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
 
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--black-soft);
     color: var(--text-light);
     line-height: 1.7;
+    overflow-x: hidden;
+    padding-top: 56px;
   }
 
   /* NAV */
   nav {
-    position: fixed; top: 0; left: 0; right: 0; width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     background: var(--black);
-    display: flex; justify-content: space-between; align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0.9rem 3rem;
     border-bottom: 1px solid var(--cyan-border);
-    -webkit-transform: translateZ(0); /* force GPU compositing layer - fixes sticky bugs on Android/iOS */
-    transform: translateZ(0);
-  }
-  body {
-    padding-top: 60px; /* offset so content isn't hidden under fixed nav */
   }
   .nav-brand {
     font-family: 'Exo 2', sans-serif;
@@ -568,8 +573,8 @@
 
   /* MOBILE */
   @media (max-width: 700px) {
-    nav { padding: 0.6rem 1.5rem; }
-    body { padding-top: 50px; } /* smaller nav on mobile = smaller offset */
+    nav { padding: 0.7rem 1.2rem; }
+    body { padding-top: 50px; }
     .hero { padding: 4rem 1.5rem; min-height: 80vh; }
     section { padding: 4rem 1.5rem; }
     #advisory { padding: 3rem 1.5rem; }
