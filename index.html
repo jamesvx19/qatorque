@@ -4,32 +4,37 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Playwright & Selenium Test Automation | qaTorque</title>
-<meta name="description" content="qaTorque delivers production-grade Playwright and Selenium test automation in fixed-price engagements. Clean code, your repository, no subscriptions. Built for Banking, FinTech, and Technology teams.">
+<!-- Primary SEO -->
+<title>qaTorque | QA Consulting Services | Fractional QA Head | Banking & FinTech</title>
+<meta name="description" content="qaTorque offers senior QA consulting services including QA Governance, Fractional QA Head, QA Audits, and Process Transformation for Banking, FinTech, and Technology teams. 17+ years of experience. Based in Bengaluru, India.">
+<meta name="keywords" content="QA Consulting, QA Governance, Fractional QA Head, QA Audit, Test Strategy, QA Manager, Banking QA, FinTech QA, QA Process, Software Quality Assurance, QA Transformation, Bengaluru, India">
 <meta name="author" content="qaTorque">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.qatorque.com/">
 
+<!-- Open Graph — controls how page looks when shared on LinkedIn, WhatsApp, Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.qatorque.com/">
-<meta property="og:title" content="Test Automation, Built Right. | qaTorque">
-<meta property="og:description" content="Production-grade Playwright and Selenium test automation. Fixed price. You own the code. No subscriptions.">
+<meta property="og:title" content="qaTorque | Senior QA Consulting | Fractional QA Head">
+<meta property="og:description" content="Senior QA leadership, when you need it. QA Governance, Audits, Fractional QA Head, and Process Transformation for Banking and FinTech teams. 17+ years experience.">
 <meta property="og:image" content="https://www.qatorque.com/og-image.png">
 <meta property="og:site_name" content="qaTorque">
 <meta property="og:locale" content="en_IN">
 
+<!-- Twitter / X Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://www.qatorque.com/">
-<meta name="twitter:title" content="Test Automation, Built Right. | qaTorque">
-<meta name="twitter:description" content="Production-grade Playwright and Selenium test suites. Fixed price. You own the code. No subscriptions.">
+<meta name="twitter:title" content="qaTorque | Senior QA Consulting | Fractional QA Head">
+<meta name="twitter:description" content="Senior QA leadership, when you need it. QA Governance, Audits, and Process Transformation for Banking and FinTech teams.">
 <meta name="twitter:image" content="https://www.qatorque.com/og-image.png">
 
+<!-- Schema Markup — helps Google understand this is a consulting business -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "qaTorque",
-  "description": "Production-grade Playwright and Selenium test automation delivered in fixed-price engagements for Banking, FinTech, and Technology teams.",
+  "description": "Senior QA Consulting services including QA Governance, Fractional QA Head, QA Audits, and Process Transformation for Banking and FinTech teams.",
   "url": "https://www.qatorque.com",
   "email": "jameson@qatorque.com",
   "address": {
@@ -37,14 +42,29 @@
     "addressLocality": "Bengaluru",
     "addressCountry": "IN"
   },
-  "serviceType": ["Playwright Test Automation", "Selenium Test Automation", "QA Automation", "Regression Testing", "CI/CD Integration", "Test Suite Development"],
-  "areaServed": ["IN", "GB", "US", "SG", "AE", "AU"],
-  "knowsAbout": ["Playwright", "Selenium", "TypeScript", "JavaScript", "Python", "Test Automation", "Banking Technology", "FinTech", "CI/CD", "Page Object Model"]
+  "founder": {
+    "@type": "Person",
+    "name": "qaTorque Consulting"
+  },
+  
+  "serviceType": [
+    "QA Governance and Framework Setup",
+    "Fractional QA Head",
+    "QA Function Setup and Scaling",
+    "Test Strategy and Planning",
+    "QA Workstream Management",
+    "Agile Quality Enablement",
+    "QA Process Audit and Health Check",
+    "Release Readiness Assessment",
+    "QA Metrics and Reporting",
+    "Vendor and Offshore QA Oversight"
+  ],
+  "areaServed": ["IN", "GB", "US", "SG", "AE"],
+  "knowsAbout": ["QA Governance", "Banking Technology", "FinTech", "Agile", "Waterfall", "Test Automation", "PMP", "ISTQB"]
 }
 </script>
-
+<!-- Playfair+Display to Lora & back -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&family=Exo+2:wght@300;400;500&display=swap" rel="stylesheet">
-
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -56,43 +76,27 @@
     --cyan: #00e5ff;
     --cyan-dim: rgba(0,229,255,0.15);
     --cyan-border: rgba(0,229,255,0.3);
-    --off-white: #f7f7f5;
-    --off-white-2: #f0f0ed;
+    --off-white: #f4f4f0;
     --text-light: #e8e8e8;
-    --text-dark: #111111;
-    --text-dark-muted: #555555;
     --muted: #888888;
     --border-dark: #222222;
-    --border-light: #e0e0dc;
     --card-bg: #141414;
-    --card-bg-light: #ffffff;
   }
 
-  html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
+  html { scroll-behavior: smooth; }
 
   body {
     font-family: 'DM Sans', sans-serif;
-    background: var(--black-soft);
-    color: var(--text-light);
+    background: var(--off-white);
+    color: #1a1a1a;
     line-height: 1.7;
-    overflow-x: hidden;
-    padding-top: 56px;
   }
 
   /* NAV */
   nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+    position: sticky; top: 0; z-index: 100;
     background: var(--black);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; justify-content: space-between; align-items: center;
     padding: 0.9rem 3rem;
     border-bottom: 1px solid var(--cyan-border);
   }
@@ -105,6 +109,12 @@
     text-decoration: none;
   }
   .nav-brand span { font-weight: 500; }
+  .footer-brand {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cyan);
+  }
   .nav-links { display: flex; gap: 2rem; }
   .nav-links a {
     color: rgba(255,255,255,0.65);
@@ -116,41 +126,41 @@
   }
   .nav-links a:hover { color: var(--cyan); }
 
-  .nav-hamburger {
+  
+  /* CSS P2  */
+  .nav-hamburger {                    
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--cyan);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+  
+  /* left to right P4 */
+@media (max-width: 700px) {
+  .nav-hamburger { display: block; }
+  .nav-links {
     display: none;
-    background: transparent;
-    border: none;
-    color: var(--cyan);
-    font-size: 1.5rem;
-    cursor: pointer;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: auto; 
+    min-width: 180px;
+    background: var(--black);
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--cyan-border);
+    gap: 1rem;
   }
-
-  @media (max-width: 700px) {
-    .nav-hamburger { display: block; }
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      width: auto;
-      min-width: 180px;
-      background: var(--black);
-      padding: 1rem 1.5rem;
-      border-top: 1px solid var(--cyan-border);
-      gap: 1rem;
-    }
-    .nav-links.open { display: flex; }
-  }
-
+  .nav-links.open { display: flex; }
+}
+  
   /* HERO */
   .hero {
     background: var(--black);
-    padding: 7rem 3rem 7rem;
-    min-height: 88vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 0.9rem 3rem 5rem;
     position: relative;
     overflow: hidden;
   }
@@ -172,66 +182,80 @@
     width: 100%; height: 1px;
     background: linear-gradient(to right, var(--cyan), transparent);
   }
-  .hero-inner { max-width: 1100px; margin: 0 auto; width: 100%; position: relative; }
+  .hero-inner { max-width: 820px; position: relative; }
   .hero-eyebrow {
-    margin-top: 0;
+    margin-top: 2rem;
     font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 0.2em;
     color: var(--cyan);
     text-transform: uppercase;
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.2rem;
   }
   .hero h1 {
+    /* -- Playfair Display to Lora and back */
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    /* font-size: clamp(1.6rem, 3.5vw, 2.4rem); */
+    
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
     font-weight: 600;
     color: #ffffff;
-    line-height: 1.3;
-    margin-bottom: 2rem;
-    padding-top: 1rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--cyan);
   }
   .hero-sub {
     font-size: 1.05rem;
-    color: rgba(255,255,255,0.85);
-    max-width: 780px;
-    margin-bottom: 0.9rem;
-    font-weight: 300;
-    line-height: 1.75;
-  }
-  .hero-sub-2 {
-    font-size: 0.93rem;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.6);
     max-width: 580px;
     margin-bottom: 2.5rem;
     font-weight: 300;
-    line-height: 1.75;
   }
-  .hero-trust {
+  .hero-cta {
+    display: inline-block;
+    background: var(--cyan);
+    color: var(--black);
+    text-decoration: none;
+    padding: 0.85rem 2.2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .hero-cta:hover { background: #33ecff; transform: translateY(-1px); }
+
+  .hero-stats {
     display: flex; gap: 3rem; flex-wrap: wrap;
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     padding-top: 2.5rem;
     border-top: 1px solid rgba(255,255,255,0.08);
-    padding-bottom: 1rem;
   }
-  .trust-item {
-    display: flex; align-items: center; gap: 0.6rem;
+  .stat-num {
+    /* -- Playfair Display to Lora and back */
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--cyan);
+    display: block;
+    line-height: 1;
+    margin-bottom: 0.3rem;
   }
-  .trust-dot {
-    width: 5px; height: 5px;
-    background: var(--cyan);
-    flex-shrink: 0;
-  }
-  .trust-text {
+  .stat-label {
     font-size: 0.78rem;
-    color: rgba(255,255,255,0.55);
+    color: rgba(255,255,255,0.4);
     font-weight: 300;
     letter-spacing: 0.04em;
   }
 
   /* SECTIONS */
-  section { padding: 7rem 3rem; scroll-margin-top: 60px; }
+  section { padding: 5rem 3rem; }
+   /* Adjust padding P6 */
+  section { padding: 5rem 3rem; scroll-margin-top: 60px; }
   .section-inner { max-width: 1100px; margin: 0 auto; }
+
   .section-label {
     font-size: 0.73rem;
     font-weight: 500;
@@ -241,237 +265,203 @@
     margin-bottom: 0.6rem;
   }
   .section-title {
+    <!-- did not change from Playfair to Lora, so nothing to change back -->
     font-family: 'Playfair Display', serif;
     font-size: clamp(1.7rem, 3vw, 2.3rem);
     font-weight: 600;
-    color: #ffffff;
+    color: #0f0f0f;
     margin-bottom: 1rem;
     line-height: 1.2;
   }
   .section-intro {
     font-size: 1rem;
-    color: rgba(255,255,255,0.7);
-    max-width: 780px;
+    color: #555;
+    max-width: 600px;
     margin-bottom: 3rem;
     font-weight: 300;
   }
 
-  /* HOW IT WORKS */
-  #how { background: var(--off-white); }
-  #how .section-label { color: #0099bb; }
-  #how .section-title { color: var(--text-dark); }
-  #how .section-intro { color: var(--text-dark-muted); }
-  .steps-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 0;
+  /* SERVICES GRID */
+  #services { background: var(--off-white); }
+
+  /* PILLAR DIVIDERS */
+  .pillar-header {
+    margin-bottom: 1.6rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #e0e0d8;
     position: relative;
   }
-  .steps-grid::before {
+  .pillar-header::before {
     content: '';
     position: absolute;
-    top: 2.2rem; left: 0; right: 0;
-    height: 1px;
-    background: linear-gradient(to right, #0099bb, rgba(0,153,187,0.1));
-    z-index: 0;
+    bottom: -1px; left: 0;
+    width: 48px; height: 2px;
+    background: var(--cyan);
   }
-  .step {
-    padding: 0 2rem 2rem 0;
-    position: relative;
-    z-index: 1;
-  }
-  .step-num {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 0.72rem;
+  .pillar-label {
+    font-size: 0.68rem;
     font-weight: 500;
-    letter-spacing: 0.15em;
-    color: #0099bb;
-    background: var(--off-white);
-    display: inline-block;
-    padding-right: 1rem;
-    margin-bottom: 1.2rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #006070;
+    margin-bottom: 0.35rem;
   }
-  .step h3 {
-    font-size: 0.98rem;
-    font-weight: 500;
-    color: var(--text-dark);
-    margin-bottom: 0.6rem;
-    line-height: 1.3;
+  .pillar-title {
+    /* -- Playfair Display to Lora and back */
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0f0f0f;
+    margin-bottom: 0.3rem;
+    line-height: 1.25;
   }
-  .step p {
-    font-size: 0.85rem;
-    color: var(--text-dark-muted);
+  .pillar-tagline {
+    font-size: 0.83rem;
+    color: #888;
     font-weight: 300;
-    line-height: 1.65;
+    font-style: italic;
   }
+  .pillar-group {
+    margin-bottom: 3.5rem;
+  }
+  .pillar-group:last-child { margin-bottom: 0; }
 
-  /* WHAT YOU GET */
-  #what { background: var(--off-white-2); }
-  #what .section-label { color: #0099bb; }
-  #what .section-title { color: var(--text-dark); }
-  #what .section-intro { color: var(--text-dark-muted); }
-  .what-grid {
+  .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 1.4rem;
   }
-  .what-card {
-    background: var(--card-bg-light);
-    border: 1px solid var(--border-light);
-    padding: 1.75rem 2rem;
+  .service-card {
+    background: #ffffff;
+    border: 1px solid #e0e0d8;
+    padding: 2rem;
     position: relative;
-    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
   }
-  .what-card:hover {
-    border-color: rgba(0,153,187,0.4);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 24px rgba(0,0,0,0.07);
+  .service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    border-color: rgba(0,229,255,0.4);
   }
-  .what-card::before {
+  .service-card::before {
     content: '';
     position: absolute;
     top: 0; left: 0;
     width: 3px; height: 0;
-    background: #0099bb;
+    background: var(--cyan);
     transition: height 0.25s;
   }
-  .what-card:hover::before { height: 100%; }
-  .what-icon {
-    width: 32px; height: 32px;
-    border: 1px solid rgba(0,153,187,0.35);
+  .service-card:hover::before { height: 100%; }
+  .service-num {
+    <-- Playfair Display to Lora -->
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #d8d8d0;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  .service-title {
+    font-size: 0.98rem;
+    font-weight: 500;
+    color: #0f0f0f;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+  }
+  .service-desc {
+    font-size: 0.87rem;
+    color: #666;
+    line-height: 1.65;
+    font-weight: 300;
+  }
+  .service-tag {
+    display: inline-block;
+    margin-top: 1.2rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #006070;
+    background: rgba(0,229,255,0.12);
+    padding: 0.25rem 0.7rem;
+    border: 1px solid rgba(0,229,255,0.25);
+  }
+
+  /* WHY ME */
+  #why { background: var(--black); }
+  #why .section-label { color: var(--cyan); }
+  #why .section-title { color: #ffffff; }
+  #why .section-intro { color: rgba(255,255,255,0.5); }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1.4rem;
+  }
+  .why-card {
+    border: 1px solid rgba(0,229,255,0.15);
+    padding: 1.75rem;
+    background: rgba(0,229,255,0.03);
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .why-card:hover {
+    border-color: rgba(0,229,255,0.5);
+    background: rgba(0,229,255,0.06);
+  }
+  .why-icon {
+    width: 34px; height: 34px;
+    border: 1px solid rgba(0,229,255,0.35);
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 1rem;
   }
-  .what-icon svg { width: 15px; height: 15px; stroke: #0099bb; fill: none; stroke-width: 1.5; }
-  .what-card h3 {
-    font-size: 0.92rem;
+  .why-icon svg { width: 16px; height: 16px; stroke: var(--cyan); fill: none; stroke-width: 1.5; }
+  .why-card h3 {
+    font-size: 0.9rem;
     font-weight: 500;
-    color: var(--text-dark);
+    color: #ffffff;
     margin-bottom: 0.5rem;
   }
-  .what-card p {
-    font-size: 0.83rem;
-    color: var(--text-dark-muted);
+  .why-card p {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.45);
     font-weight: 300;
     line-height: 1.65;
   }
 
-  /* PRICING */
-  #pricing { background: var(--off-white); }
-  #pricing .section-label { color: #0099bb; }
-  #pricing .section-title { color: var(--text-dark); }
-  #pricing .section-intro { color: var(--text-dark-muted); }
-
-  .pricing-grid {
+  /* WHO IT'S FOR */
+  #who { background: #efefeb; }
+  #who .section-title { color: #0f0f0f; }
+  .who-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1px;
-    background: rgba(0,153,187,0.15);
-    border: 1px solid rgba(0,153,187,0.15);
-    margin-bottom: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 1.2rem;
   }
-  .pricing-card {
+  .who-item {
     background: #ffffff;
-    padding: 2.2rem 2rem;
-    position: relative;
-    transition: background 0.2s;
+    border: 1px solid #e0e0d8;
+    padding: 1.5rem 1.75rem;
+    display: flex; gap: 1rem; align-items: flex-start;
+    transition: border-color 0.2s;
   }
-  .pricing-card:hover { background: #f9f9f7; }
-  .pricing-card.featured {
-    background: #ffffff;
-    border-left: 2px solid #0099bb;
+  .who-item:hover { border-color: rgba(0,229,255,0.4); }
+  .who-bullet {
+    width: 7px; height: 7px;
+    background: var(--cyan);
+    margin-top: 0.6rem;
+    flex-shrink: 0;
   }
-  .pricing-tier {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 0.72rem;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #0099bb;
-    margin-bottom: 1.2rem;
+  .who-item p {
+    font-size: 0.91rem;
+    color: #333;
+    font-weight: 400;
+    line-height: 1.65;
   }
-  .pricing-units {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    line-height: 1;
-    margin-bottom: 0.3rem;
-  }
-  .pricing-units span {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 300;
-    color: var(--text-dark-muted);
-    letter-spacing: 0.1em;
-    display: block;
-    margin-top: 0.4rem;
-  }
-  .pricing-desc {
-    font-size: 0.82rem;
-    color: var(--text-dark-muted);
-    font-weight: 300;
-    line-height: 1.6;
-    margin-top: 1.2rem;
-    padding-top: 1.2rem;
-    border-top: 1px solid rgba(0,0,0,0.08);
-  }
-  .pricing-enterprise .pricing-units {
-    font-size: 1.5rem;
-    letter-spacing: 0.02em;
-  }
-
-  .pricing-note {
-    font-size: 0.8rem;
-    color: var(--text-dark-muted);
-    font-weight: 300;
-    text-align: left;
-    margin-top: 1.5rem;
-  }
-  /* QA ADVISORY INLINE */
-  .advisory-inline {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(0,0,0,0.08);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  .advisory-inline-label {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(0,153,187,0.65);
-    display: block;
-    margin-bottom: 0.6rem;
-  }
-  .advisory-inline-text {
-    font-size: 0.85rem;
-    color: var(--text-dark-muted);
-    font-weight: 300;
-    line-height: 1.75;
-  }
-  .advisory-inline-link {
-    color: #0099bb;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(0,153,187,0.3);
-    padding-bottom: 1px;
-    transition: color 0.2s, border-color 0.2s;
-    margin-left: 0.3rem;
-  }
-  .advisory-inline-link:hover {
-    color: #007a99;
-    border-color: #007a99;
-  }
+  .who-item strong { font-weight: 500; color: #0f0f0f; }
 
   /* CONTACT */
   #contact {
     background: var(--black);
     text-align: center;
-    padding: 8rem 3rem;
+    padding: 6rem 3rem;
     position: relative;
   }
   #contact::before {
@@ -482,66 +472,30 @@
   }
   #contact .section-label { color: var(--cyan); }
   #contact .section-title { color: #ffffff; }
-  #contact .section-intro { color: rgba(255,255,255,0.7); margin: 0 auto 2.5rem; max-width: 820px; }
-
-  .contact-actions {
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-  }
-  .btn-primary {
+  #contact .section-intro { color: rgba(255,255,255,0.5); margin: 0 auto 2.5rem; }
+  .contact-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+  .contact-link {
     display: inline-block;
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    padding: 0.85rem 2.2rem;
+    border: 1px solid var(--cyan-border);
+    color: var(--cyan);
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+  }
+  .contact-link:hover {
     background: var(--cyan);
     color: var(--black);
-    text-decoration: none;
-    padding: 0.85rem 2.2rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    border: 1px solid var(--cyan);
-    transition: background 0.2s, transform 0.15s;
-    cursor: pointer;
-    font-family: 'DM Sans', sans-serif;
-  }
-  .btn-primary:hover { background: #33ecff; transform: translateY(-1px); }
-
-  .btn-secondary {
-    display: inline-block;
-    background: transparent;
-    color: var(--cyan);
-    text-decoration: none;
-    padding: 0.85rem 2.2rem;
-    font-size: 0.9rem;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    border: 1px solid var(--cyan-border);
-    transition: background 0.2s, border-color 0.2s, color 0.2s;
-    cursor: pointer;
-    font-family: 'DM Sans', sans-serif;
-  }
-  .btn-secondary:hover {
-    background: rgba(0,229,255,0.08);
     border-color: var(--cyan);
   }
-
-  .contact-linkedin {
-    margin-top: 1.5rem;
-    font-size: 0.78rem;
-    color: rgba(255,255,255,0.45);
-    font-weight: 300;
+  .contact-link.primary {
+    background: var(--cyan);
+    color: var(--black);
+    border-color: var(--cyan);
   }
-  .contact-linkedin a {
-    color: rgba(255,255,255,0.45);
-    text-decoration: none;
-    letter-spacing: 0.04em;
-    transition: color 0.2s;
-  }
-  .contact-linkedin a:hover { color: rgba(255,255,255,0.75); }
-
-
-
+  .contact-link.primary:hover { background: #33ecff; }
 
   /* FOOTER */
   footer {
@@ -551,13 +505,11 @@
     flex-wrap: wrap; gap: 1rem;
     border-top: 1px solid #111;
   }
-  .footer-brand {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--cyan);
+  footer .footer-right {
+    display: flex; flex-direction: column; align-items: flex-end; gap: 0.25rem;
   }
-  footer p { font-size: 0.7rem; color: rgba(255,255,255,0.45); }
+  .footer-logo { height: 28px; width: auto; }
+  footer p { font-size: 0.76rem; color: rgba(255,255,255,0.25); }
 
   /* ANIMATIONS */
   @keyframes fadeUp {
@@ -568,282 +520,215 @@
   .hero-eyebrow { animation-delay: 0.1s; }
   .hero h1 { animation-delay: 0.2s; }
   .hero-sub { animation-delay: 0.3s; }
-  .hero-sub-2 { animation-delay: 0.35s; }
-  .hero-trust { animation-delay: 0.4s; }
+  .hero-cta { animation-delay: 0.4s; }
+  .hero-stats { animation-delay: 0.5s; }
 
-  /* MOBILE */
   @media (max-width: 700px) {
-    nav { padding: 0.7rem 1.2rem; }
-    body { padding-top: 50px; }
-    .hero { padding: 4rem 1.5rem; min-height: 80vh; }
-    section { padding: 4rem 1.5rem; }
-    #advisory { padding: 3rem 1.5rem; }
-    #contact { padding: 5rem 1.5rem; }
+    nav { padding: 0.6rem 1.5rem; }
+    .nav-links { display: none; }
+    .hero { padding: 3rem 1.5rem; }
+    section { padding: 3rem 1.5rem; }
+    #contact { padding: 3.5rem 1.5rem; }
     footer { padding: 1.5rem; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
-    footer > div:last-child { align-items: flex-end; align-self: flex-end; }
-    .hero h1 { font-size: 1.9rem; }
-    .hero-trust { gap: 1.2rem; }
-    .steps-grid { grid-template-columns: 1fr; }
-    .steps-grid::before { display: none; }
-    .step { padding: 0 0 2rem 0; border-left: 2px solid rgba(0,153,187,0.3); padding-left: 1.5rem; background: var(--off-white); }
-    .what-grid { grid-template-columns: 1fr; }
-    .pricing-grid { grid-template-columns: 1fr; }
-    .contact-actions { flex-direction: column; align-items: stretch; }
-    .btn-primary, .btn-secondary { text-align: center; }
+    footer .footer-right { align-items: flex-start; }
+    .hero h1 { font-size: 2rem; }
+    .hero-stats { gap: 1.2rem; display: grid; grid-template-columns: 1fr 1fr; }
+    .services-grid { grid-template-columns: 1fr; }
+    .why-grid { grid-template-columns: 1fr; }
+    .who-list { grid-template-columns: 1fr; }
+    .contact-links { flex-direction: column; align-items: stretch; }
+    .contact-link { text-align: center; }
+    .hero-sub { font-size: 0.95rem; }
     .section-title { font-size: 1.6rem; }
-    #advisory .section-inner { flex-direction: column; gap: 1rem; }
   }
-  /* ABOUT */
-  #about { background: var(--black); }
-  #about .section-label { color: var(--cyan); }
-  #about .section-title { color: #ffffff; }
-  .about-inner { max-width: 780px; }
-  .about-bio {
-    font-size: 0.97rem;
-    color: rgba(255,255,255,0.78);
-    font-weight: 300;
-    line-height: 1.85;
-    margin-bottom: 2.5rem;
-  }
-  .about-bio p { margin-bottom: 1.2rem; }
-  .about-bio p:last-child { margin-bottom: 0; }
-  .about-bullets {
-    list-style: none;
-    margin-bottom: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-  .about-bullets li {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.8rem;
-    font-size: 0.88rem;
-    color: rgba(255,255,255,0.7);
-    font-weight: 300;
-    line-height: 1.6;
-  }
-  .about-bullets li::before {
-    content: '';
-    width: 5px; height: 5px;
-    background: var(--cyan);
-    flex-shrink: 0;
-    margin-top: 0.55rem;
-  }
-  .about-certs {
-    font-size: 0.78rem;
-    color: rgba(255,255,255,0.4);
-    letter-spacing: 0.12em;
-    font-weight: 300;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-  }
-  .about-closing {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.05rem;
-    font-style: italic;
-    color: rgba(255,255,255,0.55);
-    border-left: 2px solid var(--cyan);
-    padding-left: 1.2rem;
-    margin-bottom: 3rem;
-    line-height: 1.6;
-  }
-  .about-email {
-    font-size: 0.75rem;
-    color: rgba(255,255,255,0.42);
-    font-weight: 300;
-    letter-spacing: 0.04em;
-    text-align: right;
-  }
-  .about-email a {
-    color: rgba(255,255,255,0.42);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-  .about-email a:hover { color: rgba(255,255,255,0.65); }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="#" class="nav-brand">qa<span>Torque</span></a>
-  <button class="nav-hamburger" id="hamburger">&#9776;</button>
-  <div class="nav-links" id="navLinks">
-    <a href="#" onclick="scrollToSection('how', event)">How It Works</a>
-    <a href="#" onclick="scrollToSection('pricing', event)">Pricing</a>
-    <a href="#" onclick="scrollToSection('about', event)">About</a>
-    <a href="#" onclick="scrollToSection('contact', event)">Contact</a>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#why">Why Me</a>
+    <a href="#who">Who It's For</a>
+    <a href="#contact">Contact</a>
   </div>
+  <button class="nav-hamburger" onclick="toggleMenu(event)">&#9776;</button>  <!-- hamburger added P1 & R1 -->  
 </nav>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <h1>Production-Grade Test Automation.</h1>
-    <p class="hero-sub">Engineered to protect your releases as your product evolves.</p>
-    <p class="hero-sub-2">Fixed scope. Clear pricing. Code delivered to your repository.</p>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section id="how">
-  <div class="section-inner">
-    <p class="section-label">The process</p>
-    <h2 class="section-title">How it works</h2>
-    <p class="section-intro">Four steps from enquiry to a delivered test suite, with no surprises at any stage.</p>
-
-    <div class="steps-grid">
-      <div class="step">
-        <div class="step-num">01 — SCOPE REVIEW</div>
-        <h3>We understand your flows</h3>
-        <p>We capture the test scenarios and expected behaviours provided by your team as a lightweight scoping reference before automation begins.</p>
+    <p class="hero-eyebrow">Senior QA Consultant </p> <!-- &amp; Fractional QA Head T1 10 Apr 2025 -->
+    <h1>Senior QA leadership,<br><em>when you need it.</em></h1>
+    <p class="hero-sub">17+ years building and governing quality primarily in Banking and FinTech.<br>I partner with teams that need senior QA oversight, process rigour, and delivery confidence — on an engagement basis.</p>
+    <a href="#contact" class="hero-cta">Let's talk →</a>
+    <div class="hero-stats">
+      <div>
+        <span class="stat-num">17+</span>
+        <span class="stat-label">Years in QA &amp; Delivery</span>
       </div>
-      <div class="step">
-        <div class="step-num">02 — FIXED QUOTE</div>
-        <h3>You know the cost upfront</h3>
-        <p>We propose a fixed price based on your Test Unit count. No hourly estimates, no scope creep, no surprises. You approve before we begin.</p>
+      <div>
+        <span class="stat-num">95%</span>
+        <span class="stat-label">Production Backlog Reduced</span>
       </div>
-      <div class="step">
-        <div class="step-num">03 — SPRINT DELIVERY</div>
-        <h3>Senior SDETs build your suite</h3>
-        <p>Clean Selenium or Playwright code, Page Object Model architecture, resilient selectors — delivered in a defined sprint to your agreed timeline.</p>
+      <div>
+        <span class="stat-num">60%</span>
+        <span class="stat-label">Manual Effort Reduction</span>
       </div>
-      <div class="step">
-        <div class="step-num">04 — YOU OWN IT</div>
-        <h3>Code lives in your repository</h3>
-        <p>On completion, we hand over the full test suite — clean, version-controlled, and ready to run. No proprietary platform, no ongoing licence. It's yours to run, extend, and own forever.</p>
+      <div>
+        <span class="stat-num" style="font-size:1.3rem; letter-spacing:0.03em;">APAC · EMEA · LATAM</span>
+        <span class="stat-label">Cross-Regional Delivery</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WHAT YOU GET -->
-<section id="what">
+<!-- SERVICES -->
+<section id="services">
   <div class="section-inner">
-    <p class="section-label">Delivery standards</p>
-    <h2 class="section-title">What every engagement includes</h2>
-    <p class="section-intro">Built to production standards. Not scripts — a maintainable, scalable test architecture.</p>
+    <p class="section-label">What I offer</p>
+    <h2 class="section-title">Consulting Services</h2>
+    <p class="section-intro">Focused engagements designed to solve real quality and delivery problems.</p>
 
-    <div class="what-grid">
-      <div class="what-card">
-        <div class="what-icon">
-          <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-        </div>
-        <h3>Defined Scope &amp; Phased Delivery</h3>
-        <p>Every engagement is structured into clear phases with agreed deliverables, so you always know what's being built and what comes next.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <h3 class="service-title">QA Leadership & Delivery Oversight</h3>
+        <!--     replaced Fractional QA Head on 10 Apr 2026          -->
+        <p class="service-desc">Senior QA leadership on a part-time or engagement basis — owning quality strategy, team direction, tooling decisions, and stakeholder reporting without the overhead of a full-time hire.</p>
+        <span class="service-tag">LEADERSHIP</span>
       </div>
-      <div class="what-card">
-        <div class="what-icon">
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <h3 class="service-title">Quality Governance &amp; Operating Model</h3>
+        <p class="service-desc">Establishing QA standards, quality gates, policies, and metrics across engineering and delivery teams. For organisations that have grown fast and need structure without slowing down.</p>
+        <span class="service-tag">STRATEGIC</span>
+      </div>
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <h3 class="service-title">QA Function Setup &amp; Scaling</h3>
+        <p class="service-desc">Helping startups and scale-ups design and stand up their QA function from scratch — covering hiring approach, tooling choices, process design, and team structure.</p>
+        <span class="service-tag">BUILD</span>
+      </div>
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <h3 class="service-title">Test Strategy &amp; Planning</h3>
+        <p class="service-desc">Defining how testing will work for a new product, platform, or major release — scope, approach, risk-based prioritisation, and entry and exit criteria. A focused, time-boxed engagement.</p>
+        <span class="service-tag">DELIVERY</span>
+      </div>
+      <div class="service-card">
+        <div class="service-num">05</div>
+        <h3 class="service-title">Agile Quality Enablement</h3>
+        <p class="service-desc">Embedding quality into how your teams actually work — writing better acceptance criteria, shifting testing left, reducing late-stage defects, and making squads genuinely own quality day-to-day.</p>
+        <span class="service-tag">ENABLEMENT</span>
+      </div>
+      <div class="service-card">
+        <div class="service-num">06</div>
+        <h3 class="service-title">QA Audit &amp; Oversight</h3>
+        <p class="service-desc">An independent review of your QA practices, test coverage, defect management, and release processes — plus vendor and offshore QA accountability. Delivered as a clear findings report with prioritised recommendations, or as a pre-release readiness assessment.</p>
+        <span class="service-tag">DIAGNOSTIC</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY ME -->
+<section id="why">
+  <div class="section-inner">
+    <p class="section-label">Why work with me</p>
+    <h2 class="section-title">Senior experience.<br>Consulting flexibility.</h2>
+    <p class="section-intro">I've sat in the seat — as QA lead, QA manager, and delivery owner — across some of the world's most demanding banking environments.</p>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Deep domain knowledge</h3>
+        <p>Core banking, FinTech, payments, and AdTech — I understand the delivery context, not just the test cases.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Proven outcomes</h3>
+        <p>95% production backlog reduced. 60% manual effort cut through automation. Real numbers from real programmes.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Stakeholder-ready</h3>
+        <p>Comfortable presenting risk and release readiness to C-suite, client stakeholders, and distributed engineering teams.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Agile and Waterfall</h3>
+        <p>PMP and PMI-ACP certified. I've worked in both models and know when to apply which — pragmatically, not dogmatically.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
           <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
         </div>
-        <h3>Page Object Model Architecture</h3>
-        <p>Industry-standard POM structure. Selectors and logic separated. Suites that scale without becoming maintenance nightmares.</p>
+        <h3>Cost-effective leadership</h3>
+        <p>Senior QA governance and oversight without the cost or commitment of a full-time hire. Pay for what you need, when you need it.</p>
       </div>
-      <div class="what-card">
-        <div class="what-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
         </div>
-        <h3>Resilient Test Design</h3>
-        <p>Tests built with stable locator strategies and structured abstractions to minimise flakiness and reduce your long-term maintenance effort.</p>
+        <h3>Cross-regional experience</h3>
+        <p>Delivered QA workstreams across APAC, EMEA, and LATAM — coordinating onshore, offshore, and client teams simultaneously.</p>
       </div>
-      <div class="what-card">
-        <div class="what-icon">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
-        </div>
-        <h3>Cross-Browser Coverage</h3>
-        <p>Cross-browser coverage across leading browsers.</p>
-      </div>
-      <div class="what-card">
-        <div class="what-icon">
-          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-        </div>
-        <h3>Test Reports</h3>
-        <p>Detailed test reports included with every delivery — clear pass/fail results with failure context.</p>
-      </div>
-      <div class="what-card">
-        <div class="what-icon">
-          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-        </div>
-        <h3>Clear Communication</h3>
-        <p>Regular status updates, structured defect reports with full reproduction steps, and clear documentation of all test scenarios covered.</p>
-      </div>
+
     </div>
   </div>
 </section>
 
-<!-- PRICING -->
-<section id="pricing">
+<!-- WHO IT'S FOR -->
+<section id="who">
   <div class="section-inner">
-    <p class="section-label">Engagement tiers</p>
-    <h2 class="section-title">Select the engagement that matches your scope.</h2>
-    <p class="section-intro">Pricing shared on request.</p>
+    <p class="section-label">Ideal for</p>
+    <h2 class="section-title">Who I work with</h2>
+    
 
-    <div class="pricing-grid">
-      <div class="pricing-card featured">
-        <div class="pricing-tier">Pilot</div>
-        <div class="pricing-units">Up to 10
-          <span>Test Units</span>
-        </div>
-        <p class="pricing-desc">A first engagement to validate our approach and delivery quality. Available once per company.</p>
+    <div class="who-list">
+      <div class="who-item">
+        <div class="who-bullet"></div>
+        <p><strong>Startups</strong> building their QA function for the first time and not sure where to begin.</p>
       </div>
-      <div class="pricing-card">
-        <div class="pricing-tier">Growth</div>
-        <div class="pricing-units">30
-          <span>Test Units</span>
-        </div>
-        <p class="pricing-desc">Structured regression automation for growing products. Scoped per engagement, priced per Test Unit.</p>
+      <div class="who-item">
+        <div class="who-bullet"></div>
+        <p><strong>FinTech, Banking, and Technology teams</strong> needing QA governance, process transformation, or an independent audit.</p>
       </div>
-      <div class="pricing-card">
-        <div class="pricing-tier">Scale</div>
-        <div class="pricing-units">100
-          <span>Test Units</span>
-        </div>
-        <p class="pricing-desc">Comprehensive coverage for complex applications and release-critical regression suites.</p>
+      <div class="who-item">
+        <div class="who-bullet"></div>
+        <p><strong>Delivery programmes</strong> that need a senior QA hand on the tiller for a specific project or release.</p>
       </div>
-      <div class="pricing-card">
-        <div class="pricing-tier">Enterprise</div>
-        <div class="pricing-units">250+
-          <span>Test Units · Custom</span>
-        </div>
-        <p class="pricing-desc">Large-scale automation programmes. Tailored scope, phased delivery, and custom engagement terms.</p>
+      <div class="who-item">
+        <div class="who-bullet"></div>
+        <p><strong>Engineering leaders</strong> dealing with release instability, poor defect visibility, or an absent QA process.</p>
+      </div>
+      <div class="who-item">
+        <div class="who-bullet"></div>
+        <p><strong>Organisations with offshore QA teams</strong> that need independent oversight and SLA accountability.</p>
+      </div>
+      <div class="who-item">
+        <div class="who-bullet"></div>
+        <p><strong>Teams going Agile</strong> that want quality embedded in the process — not bolted on at the end.</p>
       </div>
     </div>
-
-    <p class="pricing-note">Every engagement includes a scope review, POM architecture, cross-browser coverage, and test reports.</p>
-    <p class="pricing-note" style="margin-top:0.5rem; font-style:italic;">Not sure what a Test Unit covers? We'll walk you through it during your scope review.</p>
-
-    <div class="advisory-inline">
-      <span class="advisory-inline-label">QA Advisory</span>
-      <p class="advisory-inline-text">Need senior QA leadership, a process audit, or governance support?<br>We offer advisory engagements on a selective basis.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-inner about-inner">
-    <p class="section-label">About</p>
-    <h2 class="section-title">Jameson Xavier — Senior QA Leader</h2>
-
-    <div class="about-bio">
-      <p>Jameson has spent 17 years leading QA for some of the world's leading banking and FinTech software companies — working across core banking platforms, payments, and financial data products at scale.</p>
-      <p>He has led QA teams and delivery workstreams across Agile and traditional environments, managing client engagements across APAC, EMEA, and North America.</p>
-      <p>Jameson also co-founded and operated an independent business, giving him direct insight into the pressures that founders and business leaders face on the other side of the table.</p>
-      <p>qaTorque exists because he saw the same problems repeat across organisations: test automation treated as an afterthought, teams locked into expensive platforms they didn't own, and QA brought in too late to make a real difference.</p>
-    </div>
-
-    <p style="font-size:0.82rem; font-weight:400; color:rgba(255,255,255,0.45); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:1rem;">What he brings to every engagement</p>
-    <ul class="about-bullets">
-      <li>Senior QA leadership across Banking, FinTech, and enterprise software</li>
-      <li>End-to-end ownership: strategy, automation, governance, and delivery</li>
-      <!--  <li>Hands-on Playwright expertise with modern AI-assisted workflows</li> -->
-      <li>PMP · PMI-ACP · ISTQB certified</li>
-    </ul>
-
-    <p class="about-closing">If you're building something that needs to work — and work reliably — let's talk.</p>
-
-    <p class="about-email"><a href="mailto:jameson@qatorque.com">jameson@qatorque.com</a></p>
+    <p class="section-intro" style="margin-top: 1rem;">Sounds familiar? Please get in touch.</p>
   </div>
 </section>
 
@@ -852,13 +737,87 @@
   <div class="section-inner">
     <p class="section-label">Get in touch</p>
     <h2 class="section-title">Let's start a conversation.</h2>
-    <p class="section-intro">Tell us what you're working on. We'll review what you've shared and reach out to you.</p>
-    <p style="font-size:0.8rem; color:rgba(255,255,255,0.55); font-weight:300; margin-top:-1.5rem; margin-bottom:2rem;">Please share your company email address when writing to us.</p>
-
-    <div class="contact-actions">
-      <a href="mailto:jameson@qatorque.com?subject=QA%20Automation%20Enquiry" class="btn-primary">Contact</a>
+    <p class="section-intro">If your organisation needs senior QA leadership — for governance, audits, test strategy, or fractional engagements — let's connect.</p>
+    <div class="contact-links">
+      <a href="https://linkedin.com/in/jamesonvx/" class="contact-link primary">Connect on LinkedIn</a>
+      <button class="contact-link" onclick="toggleEmailPicker()" id="emailBtn">Send an email</button>
     </div>
+
+    <!-- Email Picker -->
+    <div id="emailPicker" style="display:none; margin-top:1.5rem; border:1px solid var(--cyan-border); padding:1.5rem; max-width:380px; margin-left:auto; margin-right:auto; background:rgba(0,229,255,0.03);">
+      <p style="font-size:0.95rem; color:rgba(255,255,255,0.8); margin-bottom:1.5rem;">Email <span style="color:var(--cyan); font-weight:500;">jameson&#64;qatorque&#46;com</span></p>
+      <div style="display:flex; flex-direction:column; gap:0.75rem;">
+        <a href="https://mail.google.com/mail/?view=cm&amp;to=jameson%40qatorque.com&amp;su=QA%20Consulting%20Enquiry" target="_blank" class="email-option" onclick="instantClose(event)">Open in Gmail</a>
+        <a href="https://outlook.office.com/mail/deeplink/compose?to=jameson%40qatorque.com&amp;subject=QA%20Consulting%20Enquiry" target="_blank" class="email-option" onclick="instantClose(event)">Open in Outlook</a>
+        <button class="email-option" onclick="copyEmail()" id="copyBtn">Copy email address</button>
+      </div>
+    </div>
+  </div>
 </section>
+
+<style>
+  .email-option {
+    display: block;
+    width: 100%;
+    padding: 0.7rem 1rem;
+    background: transparent;
+    border: 1px solid var(--cyan-border);
+    color: rgba(255,255,255,0.7);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.88rem;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+    letter-spacing: 0.03em;
+  }
+  .email-option:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+    background: rgba(0,229,255,0.05);
+  }
+  #emailBtn {
+    background: transparent;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
+  }
+  #emailBtn:hover {
+    background: var(--cyan);
+    color: var(--black);
+  }
+</style>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  function instantClose(e) {
+    e.stopPropagation();
+    setTimeout(function() {
+      document.getElementById('emailPicker').style.display = 'none';
+    }, 500);
+  }
+  function toggleEmailPicker() {
+    var picker = document.getElementById('emailPicker');
+    picker.style.display = picker.style.display === 'none' ? 'block' : 'none';
+  }
+  document.addEventListener('click', function(e) {
+    var picker = document.getElementById('emailPicker');
+    var btn = document.getElementById('emailBtn');
+    if (picker.style.display === 'block' && !picker.contains(e.target) && e.target !== btn) {
+      picker.style.display = 'none';
+    }
+  });
+  function copyEmail() {
+    navigator.clipboard.writeText('jameson@qatorque.com').then(function() {
+      var btn = document.getElementById('copyBtn');
+      btn.textContent = 'Copied!';
+      setTimeout(function() {
+        btn.textContent = 'Copy email address';
+        document.getElementById('emailPicker').style.display = 'none';
+      }, 1000);
+    });
+  }
+</script>
 
 <footer>
   <div style="display:flex; flex-direction:column; gap:0.5rem;">
@@ -867,51 +826,38 @@
       <a href="https://x.com/qatorque" target="_blank" title="Connect on X" style="display:flex; align-items:center; justify-content:center; width:28px; height:28px; border:1px solid var(--cyan-border); color:var(--cyan); text-decoration:none; transition: border-color 0.2s, background 0.2s;" onmouseover="this.style.borderColor='var(--cyan)';this.style.background='rgba(0,229,255,0.1)'" onmouseout="this.style.borderColor='var(--cyan-border)';this.style.background='transparent'">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.259 5.629 5.905-5.629zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
       </a>
-      <a href="https://linkedin.com/company/qatorque" target="_blank" title="Connect on LinkedIn" style="display:flex; align-items:center; justify-content:center; width:28px; height:28px; border:1px solid var(--cyan-border); color:var(--cyan); text-decoration:none; transition: border-color 0.2s, background 0.2s;" onmouseover="this.style.borderColor='var(--cyan)';this.style.background='rgba(0,229,255,0.1)'" onmouseout="this.style.borderColor='var(--cyan-border)';this.style.background='transparent'">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-      </a>
     </div>
-    <p>&copy; 2026 qaTorque. All rights reserved.</p>
+    <p style="font-size:0.7rem; color:rgba(255,255,255,0.2);">&copy; 2026 qaTorque. All rights reserved.</p>
   </div>
   <div style="display:flex; flex-direction:column; align-items:flex-end; gap:0.2rem;">
-    <p>Playwright & Selenium Test Automation &middot; Bengaluru, India</p>
-    <p>Banking &middot; FinTech &middot; Enterprise Software</p>
+    <p>Senior QA Consultant  &middot; Bengaluru, India</p>
+  <!--&amp; Fractional QA Head   10 Apr 2026-->
+    
+    <p>Banking &middot; FinTech &middot; Technology</p>
   </div>
 </footer>
-
+  <!-- JavaScript (P3 repl P5) -->
+  
 <script>
-  // NAV
-  var hamburger = document.getElementById('hamburger');
-  var navLinks = document.getElementById('navLinks');
-
-  hamburger.addEventListener('click', function(e) {
+function toggleMenu(e) {
     e.stopPropagation();
-    navLinks.classList.toggle('open');
-  });
-
-  document.addEventListener('click', function(e) {
-    if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && e.target !== hamburger) {
-      navLinks.classList.remove('open');
-    }
-  });
-
-  // SCROLL
-  function scrollToSection(id, e) {
-    if (e) e.preventDefault();
-    var el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-    navLinks.classList.remove('open');
+    document.querySelector('.nav-links').classList.toggle('open');         <!-- to close menu if touching the screen outside the menu R2 -->
   }
-
-  // attach scroll to nav links
   document.querySelectorAll('.nav-links a').forEach(function(link) {
     link.addEventListener('click', function() {
-      navLinks.classList.remove('open');
+      document.querySelector('.nav-links').classList.remove('open');
     });
   });
-
-
+  document.addEventListener('click', function(e) {
+    var navLinks = document.querySelector('.nav-links');
+    var hamburger = document.getElementById('hamburger');
+    if (navLinks.classList.contains('open') && 
+        !navLinks.contains(e.target) && 
+        e.target !== hamburger) {
+        navLinks.classList.remove('open');
+    }
+});
 </script>
-
+  
 </body>
 </html>
